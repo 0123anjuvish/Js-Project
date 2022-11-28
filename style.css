@@ -24,8 +24,8 @@
   }
   
   .cell:hover, .cell:focus {
-    color: hsl(231, 20%, 85%);
-    background-color: #bf4e30;
+    color: hsl(240, 2%, 12%);
+    background-color: #59ecd3;
   }
   
   .cell:empty {
@@ -34,12 +34,12 @@
   }
   
   .cell--unselectable {
-    color: hsl(231, 20%, 50%);
+    color: hsl(305, 92%, 71%);
     
   }
   
   .cell--unselectable:hover, .cell--unselectable:focus {
-    color: hsl(231, 20%, 50%);
+    color: hsl(314, 95%, 77%);
     background-color: transparent;
   }
   
