@@ -1,90 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #93a379;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
 .calendar {
-    padding: 1em;
-    border-radius: 10px;
-    
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: max-content;
-    grid-auto-flow: row;
-    
-    color: black;
-    background-color: hsl(231, 20%, 85%);
-  }
-  
-  .cell {
-    width: 100%;
-    padding: 0.4em 0.8em;
-    text-align: center;
-    
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .cell:hover, .cell:focus {
-    color: hsl(240, 2%, 12%);
-    background-color: #59ecd3;
-  }
-  
-  .cell:empty {
-    width: 0;
-    padding: 0;
-  }
-  
-  .cell--unselectable {
-    color: hsl(305, 92%, 71%);
-    
-  }
-  
-  .cell--unselectable:hover, .cell--unselectable:focus {
-    color: hsl(314, 95%, 77%);
-    background-color: transparent;
-  }
-  
-  .date-text {
-    padding: 1em 0.8em;
-    grid-column: 1 / 5;
-    justify-self: start;
-    display: flex;
-    align-items: center;
-    
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .button {
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* OTHER */
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    min-height: 100vh;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    font-family: 'Ubuntu', sans-serif;
-    color: hsl(231, 20%, 85%);
-    background-color: #121420;
-  }
-  
-  h1 {
-    margin: 0.5em 0;
-  }
+  margin: auto;
+ 
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 4px rgba(220, 24, 14, 0.2);
+  width: 460px;
+  height: 500px;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 30px;
+  color: #fff;
+  height: 20%;
+  background-image: linear-gradient(90deg, #C6EA8D 0%, #FE90AF 55%, #dcf8ae 100%);
+}
+ 
+.weekdays {
+  background-color: #C6EA8D;
+  color: #fff;
+  padding: 7px 0;
+  display: flex;
+}
+
+.days {
+  font-weight: 300;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weekdays div,
+.days div {
+  text-align: center;
+  width: 14.28%;
+}
+
+.days div {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+}
+
+.prev_date {
+  color: #999;
+}
+
+.today {
+  background-color: #f993a7;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.days div:hover {
+  cursor: pointer;
+  background-color: #a5eb33;
+  border-radius: 50%;
+}
+
+.prev,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 23px;
+  background-color: rgba(252, 240, 240, 0.906);
+  transition: all 0.4s;
+}
+
+.prev:hover,
+.next:hover {
+  cursor: pointer;
+  background-color: rgba(78, 7, 73, 0.2);
+}
+
+#month {
+  font-size: 30px;
+  font-weight: 500;
+}
