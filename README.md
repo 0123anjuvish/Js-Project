@@ -3,7 +3,8 @@ This is a simple and colourfull calendar with amazing hover effects.Current date
 as well as shown in the top of the calendar.
 I have designed the UI and also made it functional using Javascript.
 
-click here to visit https://comfy-douhua-46282c.netlify.app
+click here to visit:
+https://comfy-douhua-46282c.netlify.app
 
 ## Methods
 I am using following methods for making this calendar.
