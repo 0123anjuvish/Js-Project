@@ -4,11 +4,16 @@ as well as shown in the top of the calendar.
 I have designed the UI and also made it functional using Javascript.
 
 ## Methods
-i am using following methods for making this calendar.
+I am using following methods for making this calendar.
+
 1.new Date();
-2. getMonth();
+
+2.getMonth();
+
 3.getFullYear();
-4. AddEventListener();
+
+4.AddEventListener();
 
 ### Tech Stack:
+
 HTML CSS JAVASCRIPT;
